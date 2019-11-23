@@ -1,0 +1,23 @@
+{
+  "name": "mpn_automation_e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^3.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulBarahpuria/cypress-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulBarahpuria/cypress-learning/issues"
+  },
+  "homepage": "https://github.com/rahulBarahpuria/cypress-learning#readme"
+}
