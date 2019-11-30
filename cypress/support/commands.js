@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 Cypress.Commands.add('login', () => {
-    cy.visit('https://proxy-int.broadcloudpbx.net/myphonenext/');
+    cy.visit('https://proxy-int.broadcloudpbx.net/myphonenext/', {timeout: 120000});
     cy.get('#myphonenext_username', { timeout: 15000 }).type('basic@ci.in');
     cy.get('#myphonenext_password', { timeout: 15000 }).type('Welcome2022!');
     cy.get('#myphonenext_loginButton', { timeout: 15000 }).click();

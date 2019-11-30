@@ -1,0 +1,17 @@
+# base image
+FROM cypress/browsers:node10.2.1-chrome74
+
+# set working directory
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+
+# install cypress
+RUN npm install cypress
+
+# copy cypress files and folders
+COPY cypress/integration/settings/ /usr/src/app/cypress/integration
+COPY cypress.json /usr/src/app/cypress.json
+
+# confirm the cypress install
+RUN ./node_modules/.bin/cypress verify
+
